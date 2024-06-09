@@ -1,17 +1,19 @@
-[//]: # (Image References)
-
-[image1]: ./images/sample_dog_output.png "Sample Output"
-[image2]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
-[image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
+<h1 align="center">Dog Breed Classifier </h1>
+<div align="center" >
+  <img src="https://img.shields.io/badge/made%20by-Rethabile%20Pule-blue?style=for-the-badge&labelColor=20232a" />
+  <img src="https://img.shields.io/badge/Python 3.12.2-20232a?style=for-the-badge&logo=python&labelColor=20232a" />
+</div>
 
 
 ## Project Overview
 
-Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
+This project aims to use Convolutional Neural Networks (CNN) first to classify images of dogs and predict the dog’s breed. The code used in this project can be viewed on GitHub
 
-![Sample Output][image1]
+CNNs are machine learning algorithms that mimic how human neurons work to identify phenomena and weigh options to conclude. Neural networks are typically used in problems that aim to achieve artificial intelligence, processes which humans can learn and identify from memory. In this problem, identifying dog breeds may be achievable by a human if and when they have learned the characteristics of different dog breeds. The same concept applies here where we aim to teach the CNN model how to identify and classify dogs based on their characteristics.
 
-Along with exploring state-of-the-art CNN models for classification, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
+Such models are great for facial recognition, autonomous driving, and image classification to name a few, and in this particular project, the resulting model could be used by people who would like to get a specific dog but are unable to name the breed.
+
+The project scope will be limited to creating such a model using transfer learning to first identify if an image contains a human or a dog, and if a dog is identified, then specify its breed.
 
 ## Project Instructions
 
@@ -102,9 +104,27 @@ jupyter notebook dog_app.ipynb
 
 __NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
 
-## Evaluation
+## Project Libraries
 
-Your project will be reviewed by a Udacity reviewer against the CNN project [rubric](https://review.udacity.com/#!/rubrics/810/view).  Review this rubric thoroughly, and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
+To run this project the following packages and libraries are required.
+- Sklearn: ML package used for training and improving the model and to read data files.
+- pandas: this will assist in manipulating the data and training model.
+- glob: for searching files.
+- matplot: for creating plots.
+- CV2: for face detection model.
+- keras: For the TensorFlow pre-trained models and image preprocessing.
+
+## Project Files
+
+- Root Directory:
+    - bottleneck_features:
+        folder to store bottleneck features (not uploaded due to size but can be download, see project instructions
+    - dogImages:
+        stores dog training, validation and testing images
+    - Models
+        - data_saver.py: module to save data into a db 
+        - new_best_model.pkl: Pickle file which stars the saved model
+        - train_classifier: trains and saves the classifier model
 
 ## Project Submission
 
