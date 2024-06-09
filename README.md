@@ -15,6 +15,35 @@ Such models are great for facial recognition, autonomous driving, and image clas
 
 The project scope will be limited to creating such a model using transfer learning to first identify if an image contains a human or a dog, and if a dog is identified, then specify its breed.
 
+The blog post can be viewed at https://medium.com/@rethabilepule1997/human-and-dog-breed-classifier-image-classification-9d78f51ca9ea
+
+## Project Libraries
+
+To run this project the following packages and libraries are required.
+- Sklearn: ML package used for training and improving the model and to read data files.
+- pandas: this will assist in manipulating the data and training model.
+- glob: for searching files.
+- matplot: for creating plots.
+- CV2: for face detection model.
+- keras: For the TensorFlow pre-trained models and image preprocessing.
+
+## Project Files
+
+- Root Directory:
+    - bottleneck_features:
+        folder to store bottleneck features (not uploaded due to size but can be download, see project instructions
+    - dogImages:
+        stores dog training, validation and testing images
+    - haarcascades:
+         used face detection  
+    - Lfw:
+         contain human images
+    - requirement:
+         contains yaml files to create virtual environment
+    - saved_models:
+         contains saved models from transfer learning CNNs
+    - Dog app: Notebook for manipulating data and creating CNNs
+
 ## Project Instructions
 
 ### Instructions
@@ -104,33 +133,4 @@ jupyter notebook dog_app.ipynb
 
 __NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
 
-## Project Libraries
 
-To run this project the following packages and libraries are required.
-- Sklearn: ML package used for training and improving the model and to read data files.
-- pandas: this will assist in manipulating the data and training model.
-- glob: for searching files.
-- matplot: for creating plots.
-- CV2: for face detection model.
-- keras: For the TensorFlow pre-trained models and image preprocessing.
-
-## Project Files
-
-- Root Directory:
-    - bottleneck_features:
-        folder to store bottleneck features (not uploaded due to size but can be download, see project instructions
-    - dogImages:
-        stores dog training, validation and testing images
-    - Models
-        - data_saver.py: module to save data into a db 
-        - new_best_model.pkl: Pickle file which stars the saved model
-        - train_classifier: trains and saves the classifier model
-
-## Project Submission
-
-When you are ready to submit your project, collect the following files and compress them into a single archive for upload:
-- The `dog_app.ipynb` file with fully functional code, all code cells executed and displaying output, and all questions answered.
-- An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.
-- Any additional images used for the project that were not supplied to you for the project. __Please do not include the project data sets in the `dogImages/` or `lfw/` folders.  Likewise, please do not include the `bottleneck_features/` folder.__
-
-Alternatively, your submission could consist of the GitHub link to your repository.
